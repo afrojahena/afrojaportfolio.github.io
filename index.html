@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Afroja's portfolio</title>
+</head>
+<body>
+	<div class="toggle">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<div class="container">
+		<div class="header">
+			<div class="navbar">
+				<a href="#">Home</a>
+				<a href="#about">About Me</a>
+				<a href="#Skills">Skills</a>
+				<a href="#contact">Contact</a>
+			</div>
+			<div class="head-content">
+		<img src="afroja.jpg" height="300px" 
+		width="250px">
+		<p class="name">Afroja Akter</p>
+		<p class="desc">ID: 181-15-10614</p>
+	</div>
+	</div>
+	<div class="about-section" id="about">
+		<h2>About Me</h2>
+		<p>My name is Afroja Akter. I am studying at Daffodil International University, Dept. of CSE. I interested with WEB Devloping, Graphics Design etc.I am also interested in photography. Travelling is my hobby.</p>
+	</div>
+	<div class="Skills-section" id="Skills">
+		<h2>Skills</h2>
+		<img src="c.png">
+		<img src="c++.png">
+		<img src="java.png">
+		<img src="html.png">
+	</div>
+	<div class="contact-section" id="contact">
+		<span>Contact Me</span>
+		<div class="inputs">
+			<input type="text" class="inp-name" placeholder="Name">
+			<input type="text" class="inp-mail" placeholder="Your Email"><textarea rows="10" cols="40" placeholder="Your Messege" class="inp-msg"></textarea>
+			<input type="button" class="inp-btn" value="Submit">
+		</div>
+	</div>
+	<div class="copyright">
+		<p>Afroja's Portfolio 2021</p>
+	</div>
+	</div>
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("toggle").click(function(){
+			$(".navbar").slideToggle()
+		});
+		$(window).resize(function(){
+			if($(window).width()>768)
+			{
+				$('.navbar').show();
+			}
+			else
+			{
+				$('.navbar').hide();
+			}
+		});
+	});
+</script>
+</html>
